@@ -11,7 +11,7 @@ db = firestore.client()
 def CallFunction(request):
     request = request.args
 
-    refer = db.collection("MinTable")
+    refer = db.collection("MinionTable")
     minions = refer.get()
     
     list_of_minions = []
